@@ -24,6 +24,7 @@ const Employees = (props) => {
           <div className="card--collection">
             {props.employees.map((e) => (
               <div
+                key={e.id}
                 id={e.id}
                 className={
                   e.teamName === props.selectedTeam

@@ -5,11 +5,8 @@ export default function MemberCount(props) {
         Team Member Allocation
       </h1>
       <h3 className="row justify-content-center">
-        {props.selectedTeam}, has{" "}
-        {props.teamMemberCount === 0
-          ? "no member"
-          : props.teamMemberCount + " member(s)"}
-        {/* {props.selectedTeam}, has {props.teamMemberCount} member(s); */}
+        {props.selectedTeam} has {props.teamMemberCount}
+        {props.teamMemberCount === 1 ? " member" : " members"}
       </h3>
     </div>
   );
